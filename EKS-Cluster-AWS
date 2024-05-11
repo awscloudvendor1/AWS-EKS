@@ -56,6 +56,7 @@ aws sts get-caller-identity
 # Create a  kubeconfig file where it stores the credentials for EKS:
 # kubeconfig configuration allows you to connect to your cluster using the kubectl command line.
 aws eks update-kubeconfig --region region-code --name my-cluster
+cat .kube/config
 ex: aws eks update-kubeconfig --region us-east-1 --name unus-eks-cluster-1 # Use the cluster name you just 
 created
 
